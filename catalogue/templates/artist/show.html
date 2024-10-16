@@ -4,5 +4,8 @@
 
 {% block content %}
     <h1>{{ artist.firstname }} {{ artist.lastname }}</h1>
+
+    <div><a href="{% url 'catalogue:artist-edit' artist.id %}">Modifier</a></div>
+    
     <nav><a href="{% url 'catalogue:artist-index' %}">Retour à l'index</a></nav>
 {% endblock %}
