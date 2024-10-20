@@ -5,7 +5,7 @@
 {% block content %}
     <h2>Modifier un artiste</h2>
 
-    <form action="{% url 'catalogue:artist-update' artist.id %}" method="post">
+    <form action="{% url 'catalogue:artist-edit' artist.id %}" method="post">
         {% csrf_token %}
         <input type="hidden" name="_method" value="PUT">
 
