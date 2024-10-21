@@ -57,7 +57,7 @@ def edit(request, artist_id):
 		'artist' : artist,
 	})
 
-def delete(request, artist_id):
+def delete(request, artist_id): 
     artist = get_object_or_404(Artist, id = artist_id)
 
     if request.method =="POST":
