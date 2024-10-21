@@ -58,8 +58,9 @@ def edit(request, artist_id):
 	})
 
 def delete(request, artist_id): 
+    print('ok')
     artist = get_object_or_404(Artist, id = artist_id)
-
+    print(request.method)
     if request.method =="POST":
         artist.delete()
 
