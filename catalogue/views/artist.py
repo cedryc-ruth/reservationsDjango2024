@@ -35,7 +35,7 @@ def create(request):
 		'form' : form,
 	})
 
-def edit(request, artist_id):
+def edit(request, artist_id): 
 	# fetch the object related to passed id
 	artist = Artist.objects.get(id=artist_id)
 
