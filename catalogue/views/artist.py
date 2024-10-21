@@ -22,7 +22,7 @@ def show(request, artist_id):
 		'artist' : artist,
 	})
 
-def create(request):
+def create(request): 
 	form = ArtistForm(request.POST or None)
 	
 	if request.method == 'POST':
