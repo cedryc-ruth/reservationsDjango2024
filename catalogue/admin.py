@@ -8,7 +8,7 @@ from catalogue.models import UserMeta
 # Register your models here.
 admin.site.register(Artist)
 
-# Define an inline admin descriptor for Employee model
+# Define an inline admin descriptor for User model
 # which acts a bit like a singleton
 class UserMetaInline(admin.StackedInline):
     model = UserMeta
