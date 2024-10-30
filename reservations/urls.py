@@ -52,7 +52,7 @@ urlpatterns = [
         ),
         name="password_reset_complete",
     ),
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='admin_back'),
 ]
 
 admin.site.index_title = "Projet Réservations"
