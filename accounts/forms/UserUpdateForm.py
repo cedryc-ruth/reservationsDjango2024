@@ -13,8 +13,9 @@ class UserUpdateForm(UserChangeForm):
         DUTCH = "nl", "Nederlands"
 
     #Définir les types de champs
-    first_name = forms.CharField(max_length=30)
-    last_name = forms.CharField(max_length=30)
+    username = forms.CharField(max_length=30)
+    first_name = forms.CharField(max_length=60)
+    last_name = forms.CharField(max_length=60)
     email = forms.EmailField()
     password = None
 

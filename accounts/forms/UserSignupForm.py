@@ -14,8 +14,9 @@ class UserSignUpForm(UserCreationForm):
         DUTCH = "nl", "Nederlands"
 
     #Définir les types de champs
-    first_name = forms.CharField(max_length=30)
-    last_name = forms.CharField(max_length=30)
+    username = forms.CharField(max_length=30)
+    first_name = forms.CharField(max_length=60)
+    last_name = forms.CharField(max_length=60)
     email = forms.EmailField()
 
     #Ajout des champs de données personnelles supplémentaires

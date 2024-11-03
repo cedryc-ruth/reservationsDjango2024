@@ -7,7 +7,7 @@ from .forms import UserSignUpForm
 from .forms import UserUpdateForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 
 class UserUpdateView(UserPassesTestMixin, UpdateView):
     model = User
@@ -48,14 +48,30 @@ def profile(request):
     })
 
 @login_required
-def update(request, user_id):
+def update(request, pk):
     user = User.objects.get(id=request.user.id)
     userForm = UserUpdateForm(request.POST or None, instance=user)
 
-    if userForm.is_valid():
-        userForm.save()
+    if request.method == 'POST':
+        if userForm.is_valid():
+            userForm.save()
 
-        login(request, user)
-        messages.success(request, 'Modification réussie.')
-        return redirect('home')
+            login(request, user)
+            messages.success(request, 'Modification réussie.')
+            return redirect('home')
     return render(request, 'user/update.html', {'userForm':userForm})
+
+@login_required
+def delete(request, pk):
+    if request.method == 'POST':
+        if request.user.id == pk and not request.user.is_superuser:
+            user = User.objects.get(id=request.user.id)
+            user.delete()
+
+            logout(request)
+            messages.success(request, "Votre compte a été supprimé avec succès.")
+        else:
+            messages.error(request, "Vous n'êtes pas autorisé à exécuter cette fonctionnalité.")
+    else:
+        messages.error(request, "Méthode HTTP inadéquate!")
+    return redirect('home')
