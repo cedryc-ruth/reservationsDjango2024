@@ -1,1 +1,2 @@
-from .SignupForm import *
+from .UserSignupForm import *
+from .UserUpdateForm import *

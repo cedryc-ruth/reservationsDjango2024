@@ -4,7 +4,7 @@
 
 {% block content %}
 <h2>Inscription</h2>
-<form method="post">
+<form method="post" action="{% url 'accounts:user-signup' %}">
   {% csrf_token %}
   {{ form }}
   <button type="submit">S'inscrire</button>
