@@ -5,5 +5,13 @@
 {% block content %}
     <h1>{{ locality.postal_code }} {{ locality.locality|title }}</h1>
 
+    <pre>|{{ locality.locations.all }}|</pre>
+	
+    <ul>
+    {% for location in locality.locations.all %}
+    	<li>{{ location.designation }}</li>
+    {% endfor %}
+    </ul>
+
     <nav><a href="{% url 'catalogue:locality-index' %}">Retour à l'index</a></nav>
 {% endblock %}
