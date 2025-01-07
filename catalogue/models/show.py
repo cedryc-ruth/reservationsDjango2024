@@ -2,19 +2,21 @@ from django.db import models
 from .location import *
 
 class ShowManager(models.Manager):
-	def get_by_natural_key(self, slug, created_at):
-		return self.get(slug=slug, created_at=created_at)
+	def get_by_natural_key(self, slug, created_in):
+		return self.get(slug=slug, created_in=created_in)
 
 class Show(models.Model):
 	slug = models.CharField(max_length=60, unique=True)
 	title = models.CharField(max_length=255)
 	description = models.TextField(max_length=255, null=True)
-	posterUrl = models.CharField(max_length=255, null=True)
+	poster_url = models.CharField(max_length=255, null=True)
+	duration = models.PositiveSmallIntegerField(null=True)
+	created_in = models.PositiveSmallIntegerField()
 	location = models.ForeignKey(Location, on_delete=models.SET_NULL, null=True, related_name='shows')
 	bookable = models.BooleanField(default=True)
-	price = models.DecimalField(max_digits=10, decimal_places=2, null=True)
 	created_at = models.DateTimeField(auto_now_add=True)
-	updated_at = models.DateTimeField(auto_now=True)
+	updated_at = models.DateTimeField(null=True)
+
 
 	objects = ShowManager()
 
@@ -25,10 +27,10 @@ class Show(models.Model):
 		db_table = "shows"
 		constraints = [
 			models.UniqueConstraint(
-				fields=["slug", "created_at"],
-				name="unique_slug_created_at",
+				fields=["slug", "created_in"],
+				name="unique_slug_created_in",
 			),
 		]
     
 	def natural_key(self):
-		return (self.slug, self.created_at)
+		return (self.slug, self.created_in)

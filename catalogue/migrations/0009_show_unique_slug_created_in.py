@@ -12,6 +12,6 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddConstraint(
             model_name='show',
-            constraint=models.UniqueConstraint(fields=('slug', 'created_at'), name='unique_slug_created_at'),
+            constraint=models.UniqueConstraint(fields=('slug', 'created_in'), name='unique_slug_created_in'),
         ),
     ]

@@ -8,7 +8,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('catalogue', '0009_show_unique_slug_created_at'),
+        ('catalogue', '0009_show_unique_slug_created_in'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 

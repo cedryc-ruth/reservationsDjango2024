@@ -7,8 +7,8 @@
     <ul>
     {% for show in shows %}
         <li><a href="{% url 'catalogue:show-show' show.id %}">{{ show.title }}</a>
-        {% if show.bookable %}
-            <span>{{ show.price }} €</span></li>
+        {% if not show.bookable %}
+            <em>Réservation indisponible</em>
         {% endif %}
         </li>
     {% endfor %}
