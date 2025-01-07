@@ -1,54 +1,249 @@
 [
-{
-  "model": "catalogue.artist_types",
-  "pk": 1,
-  "fields": {
-    "artist": [
-      "Daniel",
-      "Marcelin"
-    ],
-    "type": [
-      "auteur"
-    ]
-  }
-},
-{
-  "model": "catalogue.artist_types",
-  "pk": 2,
-  "fields": {
-    "artist": [
-      "Philippe",
-      "Laurent"
-    ],
-    "type": [
-      "auteur"
-    ]
-  }
-},
-{
-  "model": "catalogue.artist_types",
-  "pk": 3,
-  "fields": {
-    "artist": [
-      "Daniel",
-      "Marcelin"
-    ],
-    "type": [
-      "scénographe"
-    ]
-  }
-},
-{
-  "model": "catalogue.artist_types",
-  "pk": 5,
-  "fields": {
-    "artist": [
-      "Daniel",
-      "Marcelin"
-    ],
-    "type": [
-      "comédien"
-    ]
-  }
-}
-]
+    {
+      "model": "catalogue.artist_types",
+      "pk": 1,
+      "fields": {
+        "artist": [
+          "Daniel",
+          "Marcelin"
+        ],
+        "type": [
+          "auteur"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 2,
+      "fields": {
+        "artist": [
+          "Philippe",
+          "Laurent"
+        ],
+        "type": [
+          "auteur"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 3,
+      "fields": {
+        "artist": [
+          "Daniel",
+          "Marcelin"
+        ],
+        "type": [
+          "scénographe"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 5,
+      "fields": {
+        "artist": [
+          "Daniel",
+          "Marcelin"
+        ],
+        "type": [
+          "comédien"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 4,
+      "fields": {
+        "artist": [
+          "Philippe",
+          "Laurent"
+        ],
+        "type": [
+          "scénographe"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 6,
+      "fields": {
+        "artist": [
+          "Marius",
+          "Von Mayenburg"
+        ],
+        "type": [
+          "auteur"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 7,
+      "fields": {
+        "artist": [
+          "Olivier",
+          "Boudon"
+        ],
+        "type": [
+          "scénographe"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 8,
+      "fields": {
+        "artist": [
+          "Anne Marie",
+          "Loop"
+        ],
+        "type": [
+          "comédien"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 9,
+      "fields": {
+        "artist": [
+          "Pietro",
+          "Varasso"
+        ],
+        "type": [
+          "comédien"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 10,
+      "fields": {
+        "artist": [
+          "Laurent",
+          "Caron"
+        ],
+        "type": [
+          "comédien"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 11,
+      "fields": {
+        "artist": [
+          "Élena",
+          "Perez"
+        ],
+        "type": [
+          "comédien"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 12,
+      "fields": {
+        "artist": [
+          "Guillaume",
+          "Alexandre"
+        ],
+        "type": [
+          "comédien"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 13,
+      "fields": {
+        "artist": [
+          "Claude",
+          "Semal"
+        ],
+        "type": [
+          "auteur"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 14,
+      "fields": {
+        "artist": [
+          "Laurence",
+          "Warin"
+        ],
+        "type": [
+          "scénographe"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 15,
+      "fields": {
+        "artist": [
+          "Claude",
+          "Semal"
+        ],
+        "type": [
+          "comédien"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 16,
+      "fields": {
+        "artist": [
+          "Pierre",
+          "Wayburn"
+        ],
+        "type": [
+          "auteur"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 17,
+      "fields": {
+        "artist": [
+          "Gwendoline",
+          "Gauthier"
+        ],
+        "type": [
+          "auteur"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 18,
+      "fields": {
+        "artist": [
+          "Pierre",
+          "Wayburn"
+        ],
+        "type": [
+          "comédien"
+        ]
+      }
+    },
+    {
+      "model": "catalogue.artist_types",
+      "pk": 19,
+      "fields": {
+        "artist": [
+          "Gwendoline",
+          "Gauthier"
+        ],
+        "type": [
+          "comédien"
+        ]
+      }
+    }
+]    
