@@ -1,0 +1,54 @@
+[
+{
+  "model": "catalogue.artist_types",
+  "pk": 1,
+  "fields": {
+    "artist": [
+      "Daniel",
+      "Marcelin"
+    ],
+    "type": [
+      "auteur"
+    ]
+  }
+},
+{
+  "model": "catalogue.artist_types",
+  "pk": 2,
+  "fields": {
+    "artist": [
+      "Philippe",
+      "Laurent"
+    ],
+    "type": [
+      "auteur"
+    ]
+  }
+},
+{
+  "model": "catalogue.artist_types",
+  "pk": 3,
+  "fields": {
+    "artist": [
+      "Daniel",
+      "Marcelin"
+    ],
+    "type": [
+      "scénographe"
+    ]
+  }
+},
+{
+  "model": "catalogue.artist_types",
+  "pk": 5,
+  "fields": {
+    "artist": [
+      "Daniel",
+      "Marcelin"
+    ],
+    "type": [
+      "comédien"
+    ]
+  }
+}
+]
