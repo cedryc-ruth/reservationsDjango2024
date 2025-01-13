@@ -6,7 +6,6 @@ class ArtistAPITests(APITestCase):
     def test_create_artist(self):
         data = {'firstname': 'John', 'lastname': 'Doe'}
         response = self.client.post('/catalogue/api/artists/', data)
-        print(response)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def test_get_artist_list(self):
