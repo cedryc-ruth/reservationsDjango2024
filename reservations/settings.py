@@ -147,7 +147,8 @@ REST_FRAMEWORK = {
         # Pour l'authentification de base (utile pour Postman/cURL)
         'rest_framework.authentication.BasicAuthentication',
         # Pour l'authentification via Token
-        'rest_framework.authentication.TokenAuthentication',
+        #'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         # Exige l'authentification pour toutes les requêtes
